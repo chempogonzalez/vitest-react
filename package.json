@@ -1,15 +1,13 @@
 {
   "name": "vitest-react",
-  "version": "0.9.0",
-  "description": "🧪 Test utils setup for react/nextjs projects using Vitest",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "version": "0.9.1",
+  "description": "🧪 Test utils setup for react/nextjs projects using Vitest with TypeScript",
+  "main": "index.ts",
+  "module": "index.ts",
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "require": "./index.ts",
+      "import": "./index.ts"
     }
   },
   "scripts": {
@@ -18,12 +16,13 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "npm run lint -- --fix",
     "copy-files": "cp ./src/test-utils/setup.ts ./setup.ts",
-    "prepack": "npm run copy-files && npm run build",
-    "prepublish": "npm run copy-files && npm run build",
+    "prepack": "npm run copy-files",
+    "prepublish": "npm run copy-files",
     "postinstall": "node ./scripts/add-vitest-config.js"
   },
   "files": [
-    "dist",
+    "index.ts",
+    "src",
     "config",
     "scripts",
     "setup.ts"
