@@ -1,6 +1,6 @@
 {
   "name": "vitest-react",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "🧪 Test utils setup for react/nextjs projects using Vitest with TypeScript",
   "main": "index.ts",
   "module": "index.ts",
