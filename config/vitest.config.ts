@@ -12,5 +12,7 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: '{{setupFilesPath}}',
+    silent: true,
+    reporters: 'verbose',
   },
 })
